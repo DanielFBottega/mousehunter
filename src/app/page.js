@@ -19,7 +19,7 @@ export default function App() {
     if (!jogando) return;
 
     const atualizarTempo = setInterval(() => setTempo((t) => t + 1), 1000);
-    const aumentarVelocidade = setInterval(() => setVelocidade((v) => v + 0.2), 5000);
+    const aumentarVelocidade = setInterval(() => setVelocidade((v) => v + 1), 5000);
 
     return () => {
       clearInterval(atualizarTempo);
